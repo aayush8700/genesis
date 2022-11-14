@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="background: rgb(102,16,242);
+  background: linear-gradient(90deg, rgba(102,16,242,1) 40%, rgba(137,109,239,1) 94%);">
+      <div class="container-fluid">
+      <div class="row" style="height:90px ;"></div>
+  <div class="row justify-content-center" style="height: 475px;">
+
+    <!-- IMAGE CONTAINER -->
+
+      <div class="col-4 bg-warning rounded-start shadow-lg" style="background-color:rgb(128, 60, 237);
+      background: linear-gradient(90deg, rgb(116, 34, 246) 40%, rgba(137,109,239,1) 94%);">
+      <img src="./HomeImage.jpeg.png" style="width: 27rem ;" class=" img-fluid mt-5 mx-auto d-block" alt="">  
+    </div>
+    
+    <div class="col-4 bg-success rounded-end shadow-lg bg-white">
+      <form  action="dashboard.html">
+      <div class="form1"> 
+        <h6 style="margin-left: 5px;">SIGN IN</h6>
+        <div class="form-outline mb-1 success">
+          <input type="text" id="email" class="form-control email rounded-pill w-75" placeholder="Employee ID" />
+          <label class="form-label" for="form2Example1"></label>
+        </div> 
+    
+          <div class="form-outline mb-4 fail">
+            <input type="password" id="password" class="form-control password rounded-pill w-75 " placeholder="Password" />
+            <label class="form-label" for="form2Example2"></label>
+          </div>
+      </div>
+
+        <div class="cont-fgt" id="cont-fgt">
+          <div class="fgt-close">
+          <h3 style="color:grey ;">Forgot Your Password?</h3>
+          <button class="cross-btn">&times;</button>
+          </div>
+          <div class="fgt-main">
+            <input type="email" class="fgt-mail" placeholder="Enter Email-id">
+            <button class="email-f" >Send Email</button>
+          </div>
+        </div>
+
+
+          <!-- CHECKBOX -->
+      
+            
+
+            <div class="row mb-4 checkme">
+              <div class="col d-flex justify-content-center">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label fw-bolder" for="gridCheck">
+                Remember Me
+              </label>
+          </div>
+          </div>
+            <div class="col fs-6 fw-normal fgt-btn" >
+              <button style="padding: 0;
+              border: none;
+              background: none;
+              cursor: pointer;"> Forgot Your Password?</button>
+          </div>
+          
+
+        </div>
+
+
+        <!-- <------------sign in btn---------> --
+      
+        <button type="button" action="dashboard.html" id="btnlogin" class="btn btn-sign btn-primary btn-block mb-4 rounded-pill btn-lg">Sign in</button>   
+        </form>
+      <div class="lower-img">
+        <img src="./picture.png" class="img1 img-fluid" alt="">
+      </div>
+  </div>
+
+  </div>
+  </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	
+		$("#btnlogin").click(function(e){
+			e.preventDefault();
+			
+            if(  $("#email").val()=="employee"  && $("#password").val()=="employee"  ){
+		      window.open("dashboard.html");
+			}else{
+			alert("invalid");
+			}
+	});
+	
+	});
+</script>
+</body>
+</html>

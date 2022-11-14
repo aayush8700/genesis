@@ -1,0 +1,98 @@
+.form1 {
+    padding-left:50px;
+    margin-top: 6rem;
+
+}
+.form-control{
+    line-height: 35px;
+    background-color: white;
+}
+
+.btn{
+    width: 20rem;
+    line-height: 35px;
+    margin-left: 4rem;
+    background-color:rgb(128, 60, 237);
+  background: linear-gradient(90deg, rgb(116, 34, 246) 40%, rgba(137,109,239,1) 94%);
+
+}
+.lower-img{
+    height: -41px;
+    width:4rem;
+    margin-left: 11rem;
+    margin-bottom: 10px;
+}
+.fgt-btn{
+padding: 0;
+border: none;
+background: none;
+cursor: pointer;
+
+
+}
+.cross-btn{
+box-sizing: border-box;
+font-size: 1.25rem;
+font-weight: bold;
+cursor: pointer;
+background: none;
+border: none;
+}
+.fgt-btn:focus {
+    border: none;
+    outline: none;
+}
+.checkme{
+    margin-bottom: 5px;
+}
+.fgt-close{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.cont-fgt{
+    box-sizing: border-box;
+    border: 2px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    height: 300px;
+    border: none;
+    transition: 200ms ease-in-out;
+    display: none;
+}
+.cont-fgt.active{
+    transform: translate(-50%,-50%) scale(1);
+    display: block;
+}
+.fgt-mail{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    margin: 10px;
+    width: 32vw;
+    margin-top: 3rem;
+    
+}
+.email-f{
+    margin-top: 4rem;
+    margin-left: 22rem;
+    background: rgb(116, 34, 246);
+    border-radius: 25px;
+    height: 3rem;
+    width: 8rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+   
+}
+
